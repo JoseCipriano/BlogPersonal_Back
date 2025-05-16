@@ -1,0 +1,218 @@
+{
+	"info": {
+		"_postman_id": "7ff8a0c6-0ac3-456e-9210-67439cef4e18",
+		"name": "BlogPersonal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42728066"
+	},
+	"item": [
+		{
+			"name": "Add Publication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Hooks\",\r\n    \"description\": \"Los hooks son muy utilizados en el fronteed\",\r\n    \"course\": \"Practica Supervisada\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/blogPersonal/v1/publication/addPublication",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogPersonal",
+						"v1",
+						"publication",
+						"addPublication"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Publication by Course",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/blogPersonal/v1/publication/Taller",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogPersonal",
+						"v1",
+						"publication",
+						"Taller"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Publications",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/blogPersonal/v1/publication/publications",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogPersonal",
+						"v1",
+						"publication",
+						"publications"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Publication byId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/blogPersonal/v1/publication/publication/6826c1a12257b19d0fbc480f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogPersonal",
+						"v1",
+						"publication",
+						"publication",
+						"6826c1a12257b19d0fbc480f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Publication",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Hookss\",\r\n    \"description\": \"Los hooks son muy utilizados en el fronteed y JSX\",\r\n    \"course\": \"Practica Supervisada\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/blogPersonal/v1/publication/updatePublication/6826c1a12257b19d0fbc480f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogPersonal",
+						"v1",
+						"publication",
+						"updatePublication",
+						"6826c1a12257b19d0fbc480f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Publication",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/blogPersonal/v1/publication/deletePublication/6826c1a12257b19d0fbc480f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogPersonal",
+						"v1",
+						"publication",
+						"deletePublication",
+						"6826c1a12257b19d0fbc480f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\" : \"Joseph Terraza\",\r\n    \"textComment\" : \"jSON es el mejor \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/blogPersonal/v1/comment/6826c10c2257b19d0fbc480d/addComment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogPersonal",
+						"v1",
+						"comment",
+						"6826c10c2257b19d0fbc480d",
+						"addComment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Comment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/blogPersonal/v1/comment/6826c10c2257b19d0fbc480d/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogPersonal",
+						"v1",
+						"comment",
+						"6826c10c2257b19d0fbc480d",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
